@@ -1,0 +1,79 @@
+DATABASE SETUP
+
+Assumes following columns are present in the target database tables:
+
+To make the selections:
+woe_id, name, placetype
+
+To store the results:
+centroid_lon, centroid_lat, x_min, y_min, x_max, y_max, photos
+
+
+PYTHON PROCESSING
+
+Let's calculate the bbox and centroid for each place in a category and store results:
+
+./bounds.py -p Country
+./bounds.py -p State
+./bounds.py -p County
+./bounds.py -p Town
+#Caluclated 265210 bounds in 0:09:03.002201 (29144.0 places per minute)
+./bounds.py -p Suburb
+#Caluclated 1169381 bounds in 0:13:13.745297 (88589.0 places per minute)
+
+./bounds_backfill.py -p Country
+./bounds_backfill.py -p State
+./bounds_backfill.py -p County
+./bounds_backfill.py -p Town
+./bounds_backfill.py -p Suburb
+
+./bounds.py -p 'Geoname Admin' -t geoname
+Caluclated 8387704 bounds in 0:54:56.404674 (152781.0 places per minute)
+
+
+DATABASE POSTPROCESSING
+
+ALTER TABLE geoplanet_places ADD COLUMN accuracy character varying(30);
+UPDATE geoplanet_places SET accuracy = 'flickr median' WHERE photos > 0;
+SELECT AddGeometryColumn('geoplanet_places', 'the_geom', 4326, 'POINT', 2, true);
+UPDATE geoplanet_places SET the_geom = ST_SetSRID(ST_MakePoint(centroid_lon, centroid_lat),4326);
+
+
+#"woe_locality":"-1", "woe_lau":"-1", "woe_adm2":"-1", "woe_adm1":"-1", "woe_adm0":"-1"
+
+ALTER TABLE geoplanet_places ADD COLUMN woe_locality bigint; 
+ALTER TABLE geoplanet_places ADD COLUMN woe_lau bigint; 
+ALTER TABLE geoplanet_places ADD COLUMN woe_adm2 bigint; 
+ALTER TABLE geoplanet_places ADD COLUMN woe_adm1 bigint; 
+ALTER TABLE geoplanet_places ADD COLUMN woe_adm0 bigint; 
+
+
+EXPORT TO SHP
+
+pgsql2shp -f shp/geoplanet_pts40.shp -g the_geom -u foursquare foursquare geoplanet_places_export
+
+pgsql2shp -f shp/geoplanet_admin0.shp -g the_geom -u foursquare foursquare geoplanet_places "select * from geoplanet_places where placetype = 'Country'"
+echo "UTF-8" > shp/geoplanet_admin0.cpg
+
+pgsql2shp -f shp/geoplanet_admin1.shp -g the_geom -u foursquare foursquare geoplanet_places "select * from geoplanet_places where placetype = 'State' And photos > 0"
+echo "UTF-8" > shp/geoplanet_admin1.cpg
+
+pgsql2shp -f shp/geoplanet_admin2.shp -g the_geom -u foursquare foursquare geoplanet_places "select * from geoplanet_places where placetype = 'County' And photos > 0"
+echo "UTF-8" > shp/geoplanet_admin2.cpg
+
+pgsql2shp -f shp/geoplanet_locality.shp -g the_geom -u foursquare foursquare geoplanet_places "select * from geoplanet_places where placetype = 'Town' And photos > 0"
+echo "UTF-8" > shp/geoplanet_locality.cpg
+
+pgsql2shp -f shp/geoplanet_neighborhood.shp -g the_geom -u foursquare foursquare geoplanet_places "select * from geoplanet_places where placetype = 'Suburb' And photos > 0"
+echo "UTF-8" > shp/geoplanet_neighborhood.cpg
+
+
+
+
+ALTER TABLE geoname ADD COLUMN centroid_lon float; 
+ALTER TABLE geoname ADD COLUMN centroid_lat float; 
+ALTER TABLE geoname ADD COLUMN x_min float; 
+ALTER TABLE geoname ADD COLUMN y_min float; 
+ALTER TABLE geoname ADD COLUMN x_max float; 
+ALTER TABLE geoname ADD COLUMN y_max float; 
+ALTER TABLE geoname ADD COLUMN photos bigint; 
