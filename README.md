@@ -24,31 +24,31 @@ Enjoy!
 
 Shapefiles are in WGS84 (geographic) projection and UTF-8 character encoding. 
 
-* [quatroshapes admin 0]() - 106 mb
-* [quatroshapes admin 1 regions]() - 17 mb
-* [quatroshapes admin 1]() - 106 mb
-* [quatroshapes admin 2 regions]() - 1.5 mb
-* [quatroshapes admin 2]() - 304 mb
-* [quatroshapes local admin]() - 467 mb
-* [quatroshapes localities]() - 420 mb
-* [quatroshapes neighborhoods]() - 32 mb
+* [quatroshapes admin 0](http://static.quattroshapes.com/qs_adm0.zip) - 106 mb
+* [quatroshapes admin 1 regions](http://static.quattroshapes.com/qs_adm1_region.zip) - 17 mb
+* [quatroshapes admin 1](http://static.quattroshapes.com/qs_adm1.zip) - 106 mb
+* [quatroshapes admin 2 regions](http://static.quattroshapes.com/qs_adm2_region.zip) - 1.5 mb
+* [quatroshapes admin 2](http://static.quattroshapes.com/qs_adm2.zip) - 304 mb
+* [quatroshapes local admin](http://static.quattroshapes.com/qs_localadmin.zip) - 467 mb
+* [quatroshapes localities](http://static.quattroshapes.com/qs_localities.zip) - 420 mb
+* [quatroshapes neighborhoods](http://static.quattroshapes.com/qs_neighborhoods.zip) - 32 mb
 
 ##Goodies
 
 quatroshapes gazetteer:
 
-* [prefer GeoNames.org lat-lngs]() - 154 mb
-* [prefer GeoPlanet + Flickr lat-lngs]() - 154 mb
-* [localities only, Geonames.org lat-lngs]() - 46 mb
-* [places with population, checkins, or flickr photos, Geonames.org lat-lngs]() - 34 mb
+* [prefer GeoNames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp.zip) - 154 mb
+* [prefer GeoPlanet + Flickr lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gp_then_gn.zip) - 154 mb
+* [localities only, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_locality.zip) - 46 mb
+* [places with population, checkins, or flickr photos, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_with_content.zip) - 34 mb
 
 Other:
 
-* [Natural Earth admin-1]() - 16 mb, version 3.0.0
-* [US State Department HIU admin-0]() - 79 mb, re-coded like Natural Earth
-* [National Mapping Agency Open Data]() - 7 gb
-* [Customized Europe localities]() - 135 mb, mashed-up EuroGeoGraphics urban data and European Environment Agency [UMZ](http://www.eea.europa.eu/data-and-maps/data/urban-morphological-zones-2006-umz2006-f3v0) data.
-* [GeoPlanet voronoi diagrams]() - 198 mb includes adm0, adm1, adm2, localadmin & localities.
+* [Natural Earth admin-1](http://static.quattroshapes.com/ne_adm1.zip) - 16 mb, version 3.0.0
+* [US State Department HIU admin-0](http://static.quattroshapes.com/ne_ussd_adm0.zip) - 79 mb, re-coded like Natural Earth
+* [National Mapping Agency Open Data](http://static.quattroshapes.com/nma.zip) - 7 gb
+* [Customized Europe localities](http://static.quattroshapes.com/europe_localities.zip) - 135 mb, mashed-up EuroGeoGraphics urban data and European Environment Agency [UMZ](http://www.eea.europa.eu/data-and-maps/data/urban-morphological-zones-2006-umz2006-f3v0) data.
+* [GeoPlanet voronoi diagrams](http://static.quattroshapes.com/geoplanet_voronoi.zip) - 198 mb includes adm0, adm1, adm2, localadmin & localities.
 
  
 ##Preview
