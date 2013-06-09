@@ -1,8 +1,8 @@
 #ATTRIBUTION
 
-The quattroshapes are released by foursquare under CC-BY attribution license.
+The quattroshapes are released by foursquare under [CC-BY](http://creativecommons.org/licenses/by/2.0/) attribution license.
 
-Please include attribution in your app, site, or printed work. Sample wording: "Includes data from foursquare quattroshapes" with a link to the Github repo.
+Please include attribution in your app, site, or printed work. Sample wording: "Includes data from foursquare quattroshapes" with a link to this Github repo.
 
 #ADDITIONAL ATTRIBUTION
 
