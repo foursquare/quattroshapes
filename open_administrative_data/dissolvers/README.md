@@ -1,0 +1,1 @@
+Requires [shputils](https://github.com/blackmad/shputils).
