@@ -4,7 +4,9 @@ _The Global Polygon Gazetteer_
 
 [Foursquare](http://foursquare.com) needs quality place data to power its geocoding engine to ensure the best recommendations. When someone searches for the best coffee in Brooklyn, a simple venue to place point or venue to place bounding box search can result in venues in Manhattan and Jersey City overwhelming the results for Brooklyn. 
 
-To improve recommendations, we have created an authoritative source of polygons around a curated list of places. This gazetteer of non-overlapping polygons provides more relevant results than simple point geometries.
+To improve recommendations, we have created an authoritative source of polygons around a curated list of places. This gazetteer of non-overlapping polygons provides more relevant results than simple point geometries. 
+
+[View preview images »](https://github.com/foursquare/quattroshapes#preview)
 
 This work is based on foursquare checkins, geo tagged photos from [Flickr](http://flickr.com), an extended version of [Natural Earth](http://naturalearthdata.com), and [open government data](http://brigade.codeforamerica.org/opendata). Concordance is provided between quattroshapes, [geonames.org](http://geonames.org), and [Yahoo! GeoPlanet](http://developer.yahoo.com/geo/geoplanet/) unique IDs in the gazetteer.
 
