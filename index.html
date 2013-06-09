@@ -28,38 +28,112 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="quattroshapes" class="anchor" href="#quattroshapes"><span class="octicon octicon-link"></span></a>quattroshapes</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p><i>The Global Polygon Gazetteer</i></p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p><a href="http://foursquare.com">Foursquare</a> needs quality place data to power its geocoding engine to ensure the best recommendations. When someone searches for the best coffee in Brooklyn, a simple venue to place point or venue to place bounding box search can result in venues in Manhattan and Jersey City overwhelming the results for Brooklyn. </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>To improve recommendations, we have created an authoritative source of polygons around a curated list of places. This gazetteer of non-overlapping polygons provides more relevant results than simple point geometries. </p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p><a href="#preview">View preview images »</a></p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>This work is based on foursquare checkins, geo tagged photos from <a href="http://flickr.com">Flickr</a>, an extended version of <a href="http://naturalearthdata.com">Natural Earth</a>, and <a href="http://brigade.codeforamerica.org/opendata">open government data</a>. Concordance is provided between quattroshapes, <a href="http://geonames.org">geonames.org</a>, and <a href="http://developer.yahoo.com/geo/geoplanet/">Yahoo! GeoPlanet</a> unique IDs in the gazetteer.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>The quattroshapes technique calculates the dominant place ID for a given area based on heterogeneous inputs. This work is an extension of <a href="http://code.flickr.net/2008/10/30/the-shape-of-alpha/">alphashapes</a> and <a href="https://github.com/simplegeo/betashapes">betashapes</a> (thanks <a href="https://github.com/straup">Aaron</a> and <a href="https://github.com/schuyler">Schuyler</a>!) and is used to backfill countries without complete open data.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+<p>Geocoding can be the hardest part about going open source - and reverse geocoding is even harder. Reverse geocoding reports the gazetteer place for a latitude and longitude map location or address string and is useful when source data needs to be normalized. This new polygon gazetteer data is used in <a href="https://github.com/foursquare/twofishes">TwoFishes</a>, the coarse splitting geocoder (and reverse geocoder) written in scala from <a href="https://github.com/blackmad/">David Blackman</a> at foursquare.</p>
+
+<p>The quattroshapes code and resulting 30 gb of data are licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>, but includes data licensed from many governments around the world. Check the License file for full details and limitations.</p>
+
+<p>Enjoy!</p>
+
+<hr>
+
+<h3><a name="downloads" class="anchor" href="#downloads"><span class="octicon octicon-link"></span></a>Downloads</h3>
+
+<p>Shapefiles are in WGS84 (geographic) projection and UTF-8 character encoding.</p>
+
+<ul>
+<li><a href="">quatroshapes admin 0</a> - 106 mb </li>
+<li><a href="">quatroshapes admin 1 regions</a> - 17 mb </li>
+<li><a href="">quatroshapes admin 1</a> - 106 mb </li>
+<li><a href="">quatroshapes admin 2 regions</a> - 1.5 mb </li>
+<li><a href="">quatroshapes admin 2</a> - 304 mb </li>
+<li><a href="">quatroshapes local admin</a> - 467 mb </li>
+<li><a href="">quatroshapes localities</a> - 420 mb </li>
+<li><a href="">quatroshapes neighborhoods</a> - 32 mb </li>
+</ul>
+
+<p><strong>Goodies</<strong></p>
+
+<p>quatroshapes gazetteer:</p>
+
+<ul>
+<li><a href="">prefer GeoNames.org lat-lngs</a> - 154 mb </li>
+<li><a href="">prefer GeoPlanet + Flickr lat-lngs</a> - 154 mb </li>
+<li><a href="">localities only, Geonames.org lat-lngs</a> - 46 mb </li>
+<li><a href="">places with population, checkins, or flickr photos, Geonames.org lat-lngs</a> - 34 mb </li>
+</ul>
+
+<p><b>Other</b></p>
+
+<ul>
+<li><a href="">Natural Earth admin-1</a> - 16 mb, version 3.0.0 </li> 
+<li><a href="">US State Department HIU admin-0</a> - 79 mb, re-coded like Natural Earth </li> 
+<li><a href="">National Mapping Agency Open Data</a> - 7 gb </li> 
+<li><a href="">Customized Europe localities</a> - 135 mb, mashed-up EuroGeoGraphics urban data and European Environment Agency <a href="http://www.eea.europa.eu/data-and-maps/data/urban-morphological-zones-2006-umz2006-f3v0">UMZ</a> data. </li> 
+<li><a href="">GeoPlanet voronoi diagrams</a> - 198 mb includes adm0, adm1, adm2, localadmin & localities. </li> 
+</ul>
+ 
+<h3><a name="preview" class="anchor" href="#preview"><span class="octicon octicon-link"></span></a>Preview</h3>
+
+<strong>Administrative level 1<strong> 
+
+<i>(below) States and provinces in orange; regions shown in red. Mix of national mapping agency and Natural Earth.</i>
+
+<img src="images/qs_adm1.png">
+
+<strong>Administrative level 2</strong>
+
+<i>(below) Counties in bright blue; regions shown in dark blue. National mapping agency data.</i>
+
+<img src="images/qs_adm2.png">
+
+<strong>Local administrative level</strong>
+
+<i>(below) In green. This level of government assumes municipal type control over the central town and surrounding countryside. National mapping agency data.</i>
+
+<img src="images/qs_localadmin.png">
+
+<strong>Localities</strong>
+
+<i>(below) In yellow. In the USA this is the smallest unit of government with legal boundaries. For most other countries the localities here are informal parts of local administrative areas. Mix of national mapping agency, quattroshapes enumeration using foursquare checkins & custom data.</i>
+
+<img src="images/qs_localities.png">
+
+<strong>Administrative level 0</strong>
+
+<i>(below) In gray. Mix of national mapping agency and US State Department data.</i>
+
+<img src="images/qs_adm0.png">
+
+<strong>Neighborhoods</strong>
+
+<i>(below) In purple. Quattroshape enumeration from geo tagged photos in Flickr using GeoPlanet hierarchy.</i>
+
+<img src="images/qs_neighborhoods.png">
+
+<strong>Gazetteer</strong>
+
+<i>(below) In light purple. Over 1 million administrative and populated places with around 800,000 having concordance between GeoNames.org and Yahoo! GeoPlanet WOE unique IDs.</i>
+
+<img src="images/qs_gazetteer.png">
+
+
+</section>
 
         <aside id="sidebar">
           <a href="https://github.com/foursquare/quattroshapes/zipball/master" class="button">
