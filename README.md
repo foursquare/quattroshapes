@@ -45,7 +45,7 @@ Other:
 * [Natural Earth admin-1]() - 16 mb, version 3.0.0
 * [US State Department HIU admin-0]() - 79 mb, re-coded like Natural Earth
 * [National Mapping Agency Open Data]() - 7 gb
-* [Customized Europe localities]() - 135 mb
+* [Customized Europe localities]() - 135 mb, mashed-up EuroGeoGraphics urban data and European Environment Agency [UMZ](http://www.eea.europa.eu/data-and-maps/data/urban-morphological-zones-2006-umz2006-f3v0) data.
 * [GeoPlanet voronoi diagrams]() - 198 mb includes adm0, adm1, adm2, localadmin & localities.
 
  
