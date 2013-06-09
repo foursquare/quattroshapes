@@ -12,7 +12,9 @@ This work is based on foursquare checkins, geo tagged photos from [Flickr](http:
 
 The quattroshapes technique calculates the dominant place ID for a given area based on heterogeneous inputs. This work is an extension of [alphashapes](http://code.flickr.net/2008/10/30/the-shape-of-alpha/) and [betashapes](https://github.com/simplegeo/betashapes) (thanks [Aaron](https://github.com/straup) and [Schuyler](https://github.com/schuyler)!) and is used to backfill countries without complete open data.
 
-Geocoding can be the hardest part about going open source - and reverse geocoding is even harder. Reverse geocoding reports the gazetteer place for a latitude and longitude map location or address string and is useful when source data needs to be normalized. This new polygon gazetteer data is used in [TwoFishes](https://github.com/foursquare/twofishes), the coarse splitting geocoder (and reverse geocoder) written in scala from [David Blackman](https://github.com/blackmad/) at foursquare.
+Matching mapping agency polygons to the geonames.org dataset was performed using [shape-gn-matchr](https://github.com/blackmad/shputils). Concording geoplanet to geonames lives at [geoplanet-concordance](https://github.com/blackmad/geoplanet-concordance).
+
+Geocoding can be the hardest part about going open source - and reverse geocoding is even harder. Reverse geocoding reports the gazetteer place for a latitude and longitude map location or address string and is useful when source data needs to be normalized. This new polygon gazetteer data is used in [Twofishes](https://github.com/foursquare/twofishes) ([demo](http://twofishes.net)), the coarse splitting geocoder (and reverse geocoder) written in scala from [David Blackman](https://github.com/blackmad/) at foursquare.
 
 The quattroshapes code and resulting 30 gb of data are licensed under [CC-BY](http://creativecommons.org/licenses/by/2.0/), but includes data licensed from many governments around the world. Check the [License](LICENSE.md) for full details and limitations.
 
@@ -35,12 +37,12 @@ Shapefiles are in WGS84 (geographic) projection and UTF-8 character encoding.
 
 ##Goodies
 
-quatroshapes gazetteer:
+quatroshapes gazetteer (gzipped geojson):
 
-* [prefer GeoNames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp.zip) - 154 mb
-* [prefer GeoPlanet + Flickr lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gp_then_gn.zip) - 154 mb
-* [localities only, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_locality.zip) - 46 mb
-* [places with population, checkins, or flickr photos, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_with_content.zip) - 34 mb
+* [prefer GeoNames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp.gz) - 154 mb
+* [prefer GeoPlanet + Flickr lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gp_then_gn.gz) - 154 mb
+* [localities only, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_locality.gz) - 46 mb
+* [places with population, checkins, or flickr photos, Geonames.org lat-lngs](http://static.quattroshapes.com/quattroshapes_gazetteer_gn_then_gp_with_content.gz) - 34 mb
 
 Other:
 
