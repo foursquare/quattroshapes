@@ -14,7 +14,7 @@ This map database contains open data from government and other sources. Consider
 * Yahoo! GeoPlanet
 * Flickr geotagged photos
 
-###Europe:
+###Europe
 
 EuroGeoGraphics data copyright is held by European National Mapping Agencies. 
 
@@ -58,7 +58,7 @@ EuroGeoGraphics data copyright is held by European National Mapping Agencies.
 * Switzerland © Bundesamt für Landestopographie
 * Ukraine © Research Institute of Geodesy and Cartography
 
-###Additional European data:
+###Additional European data
 
 * United Kingdom: Contains Ordnance Survey data © Crown copyright and database right [2012]
 * Netherlands: Kadaster
