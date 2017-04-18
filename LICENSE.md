@@ -1,20 +1,20 @@
-#ATTRIBUTION
+# ATTRIBUTION
 
 The quattroshapes are released by foursquare under [CC-BY](http://creativecommons.org/licenses/by/2.0/) attribution license.
 
 Please include attribution in your app, site, or printed work. Sample wording: "Includes data from foursquare quattroshapes" with a link to this Github repo.
 
-#ADDITIONAL ATTRIBUTION
+# ADDITIONAL ATTRIBUTION
 
 This map database contains open data from government and other sources. Consider including the following copyright statements when using the data. 
 
-###Global gazetters and data
+### Global gazetters and data
 
 * Geonames.org
 * Yahoo! GeoPlanet
 * Flickr geotagged photos
 
-###Europe
+### Europe
 
 EuroGeoGraphics data copyright is held by European National Mapping Agencies. 
 
@@ -58,7 +58,7 @@ EuroGeoGraphics data copyright is held by European National Mapping Agencies.
 * Switzerland © Bundesamt für Landestopographie
 * Ukraine © Research Institute of Geodesy and Cartography
 
-###Additional European data
+### Additional European data
 
 * United Kingdom: Contains Ordnance Survey data © Crown copyright and database right [2012]
 * Netherlands: Kadaster
@@ -67,7 +67,7 @@ EuroGeoGraphics data copyright is held by European National Mapping Agencies.
 * Switzerland: swisstopo
 * Europe-wide: European Environment Agency (EEA) [urban morphological zones 2006](http://www.eea.europa.eu/data-and-maps/data/urban-morphological-zones-2006-umz2006-f3v0)
 
-###Americas
+### Americas
 
 * United States: US Census Bureau (Census 2010 geography files). 
 * Canada: © Department of Natural Resources Canada. All rights reserved., Statistics Canada, and BC Stats
@@ -75,7 +75,7 @@ EuroGeoGraphics data copyright is held by European National Mapping Agencies.
 * Mexico: INEGI
 * Chile: Global Map of Chile © International Steering Committee for Global Mapping / Instituto Geografico Militar de Chile
 
-###Asia
+### Asia
 
 * Indonesia: Global Map of Indonesia @ ISCGM/Indonesia
 * Australian: Geoscience Australia and Australian Bureau of Statistics

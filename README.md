@@ -1,4 +1,4 @@
-#quattroshapes
+# quattroshapes
 
 _The Global Polygon Gazetteer_
 
@@ -22,7 +22,7 @@ Enjoy!
 
 ---
 
-##Downloads
+## Downloads
 
 Shapefiles are in WGS84 (geographic) projection and UTF-8 character encoding. 
 
@@ -35,7 +35,7 @@ Shapefiles are in WGS84 (geographic) projection and UTF-8 character encoding.
 * [quatroshapes localities](http://static.quattroshapes.com/qs_localities.zip) - 420 mb
 * [quatroshapes neighborhoods](http://static.quattroshapes.com/qs_neighborhoods.zip) - 32 mb
 
-##Goodies
+## Goodies
 
 quatroshapes gazetteer (gzipped geojson):
 
@@ -53,7 +53,7 @@ Other:
 * [GeoPlanet voronoi diagrams](http://static.quattroshapes.com/geoplanet_voronoi.zip) - 198 mb includes adm0, adm1, adm2, localadmin & localities.
 
  
-##Preview
+## Preview
 
 **Administrative level 1**: 
 _(below) States and provinces in orange; regions shown in red. Mix of national mapping agency and Natural Earth._
